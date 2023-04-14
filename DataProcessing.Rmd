@@ -1,0 +1,26 @@
+---
+title: "DataProcessing"
+author: "Tasneem Ahsanullah"
+date: "2023-04-14"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+
+```{r}
+library(tidyverse)
+library(here)
+library(lubridate)
+here()
+```
+
+```{r}
+whale_points <- read.csv("./Data/whaleshark_data/dataset_points.csv", stringsAsFactors = T)
+```
+
+```{r}
+gulf_om <- filter(whale_points, latitude)
+```
+
